@@ -1,0 +1,246 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "air quality northern ireland",
+            "intents": [
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "NitrogenOxideIntent",
+                    "slots": [
+                        {
+                            "name": "city",
+                            "type": "AMAZON.GB_CITY",
+                            "samples": [
+                                "{city}"
+                            ]
+                        }
+                    ],
+                    "samples": [
+                        "What is the level of Nitrous oxide in {city}",
+                        "What is the level of nitrogen monoxide in {city}",
+                        "What is the level of Nitric oxide in {city}",
+                        "What is the level of NOX in {city}",
+                        "What is the level of nitrogen oxides in {city}",
+                        "What is the level of N O X in {city}",
+                        "What is the level of Nitrogen oxide in {city}"
+                    ]
+                },
+                {
+                    "name": "ParticulateMatterIntent",
+                    "slots": [
+                        {
+                            "name": "city",
+                            "type": "AMAZON.GB_CITY",
+                            "samples": [
+                                "{city}"
+                            ]
+                        }
+                    ],
+                    "samples": [
+                        "What is the level of particle pollution in {city}",
+                        "What is the level of particulate matter in {city}"
+                    ]
+                },
+                {
+                    "name": "SulfurDioxideIntent",
+                    "slots": [
+                        {
+                            "name": "city",
+                            "type": "AMAZON.GB_CITY",
+                            "samples": [
+                                "{city}"
+                            ]
+                        }
+                    ],
+                    "samples": [
+                        "What is the level of Sulphur Dioxide in {city}",
+                        "What is the level of S O two in {city}",
+                        "What is the level of Sulfur Dioxide in {city}"
+                    ]
+                },
+                {
+                    "name": "OzoneIntent",
+                    "slots": [
+                        {
+                            "name": "city",
+                            "type": "AMAZON.GB_CITY",
+                            "samples": [
+                                "{city}"
+                            ]
+                        }
+                    ],
+                    "samples": [
+                        "What is the level of Ozone in {city}"
+                    ]
+                },
+                {
+                    "name": "CarbonMonoxideIntent",
+                    "slots": [
+                        {
+                            "name": "city",
+                            "type": "AMAZON.GB_CITY",
+                            "samples": [
+                                "{city}"
+                            ]
+                        }
+                    ],
+                    "samples": [
+                        "What is the level of Carbon Monoxide in {city}"
+                    ]
+                }
+            ],
+            "types": []
+        },
+        "dialog": {
+            "intents": [
+                {
+                    "name": "NitrogenOxideIntent",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "city",
+                            "type": "AMAZON.GB_CITY",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.1438541557063.501739396235"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "ParticulateMatterIntent",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "city",
+                            "type": "AMAZON.GB_CITY",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.495954305966.1126008973569"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "SulfurDioxideIntent",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "city",
+                            "type": "AMAZON.GB_CITY",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.882298728102.920243974076"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "OzoneIntent",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "city",
+                            "type": "AMAZON.GB_CITY",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.506592518015.144912927196"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "CarbonMonoxideIntent",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "city",
+                            "type": "AMAZON.GB_CITY",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.153766309919.863721533304"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "delegationStrategy": "ALWAYS"
+        },
+        "prompts": [
+            {
+                "id": "Elicit.Slot.1438541557063.501739396235",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "In what city?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.495954305966.1126008973569",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "In which city?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.882298728102.920243974076",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "In what city?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.506592518015.144912927196",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "In what City?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.153766309919.863721533304",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "In what City?"
+                    }
+                ]
+            }
+        ]
+    }
+}
